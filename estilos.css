@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0 ,0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+}
+.header {
+    grid-area: header;
+    background-color: cornflowerblue;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: midnightblue;
+    padding: 0px;
+
+}
+.navbar ul {
+    text-align: right;
+    font-size:medium;
+    color:white;
+}
+
+.banner {
+    background-color: darkgray;
+}
+
+.contenedor {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+}
+.cabecera {
+    background-color:white;
+    padding:15px;
+}
+
+.contenido {
+    background-color: white;
+    padding: 15px ;
+}
+
+.main  {
+    background-color:darkslategray ;
+
+}
+
+.grid-container {
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "cabecera"
+    "main"
+    "banner" 
+    "footer";
+}
+
+@media (min-width:1024px) {
+    .grid-container {
+        grid-template-areas:
+        "header header" 
+        "navbar navbar"
+        "cabecera banner"
+        "main  banner"
+        "footer footer"
+    }
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: darkcyan;
+    color: rgba(11, 24, 13, 0.623);
+    text-align: center;
+    font-family:Arial, Helvetica, Arial, Helvetica, sans-serif;
+    height: 35px;
+}
+
+.logo{
+    color: white;
+}
